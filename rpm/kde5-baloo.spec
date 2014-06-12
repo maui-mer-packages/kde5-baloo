@@ -33,7 +33,7 @@ BuildRequires:  qt5-tools
 BuildRequires:  kf5-kdelibs4support-devel
 BuildRequires:  kf5-umbrella
 BuildRequires:  kde5-kfilemetadata-devel
-BuildRequires:  xapian-core-devel
+BuildRequires:  libxapian-devel
 BuildRequires:  kf5-kidletime-devel
 BuildRequires:  kf5-kcmutils-devel
 BuildRequires:  kf5-krunner-devel
