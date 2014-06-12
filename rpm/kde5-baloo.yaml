@@ -49,6 +49,7 @@ PkgConfigBR:
     - Qt5Concurrent
     - Qt5Test
     - Qt5PrintSupport
+    - Qt5Sql
 Requires:
     - kde5-filesystem
 
