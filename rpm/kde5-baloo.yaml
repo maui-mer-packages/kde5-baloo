@@ -1,0 +1,85 @@
+Name         : kde5-baloo
+Version      : 4.97.0
+Release      : 1
+Group        : System/Base
+License      : GPLv2+
+Summary      : Library for indexing and search
+Description  : |
+  Library for indexing and search
+URL          : http://www.kde.org
+SetupOptions : -q -n %{name}-%{version}/upstream
+
+Sources:
+    - "%{name}-%{version}.tar.xz"
+
+RpmLintIgnore:
+    - devel-file-in-non-devel-package
+    - no-changelogname-tag
+    - library-without-ldconfig-postin
+    - library-without-ldconfig-postun
+
+Configure    : none
+Builder      : none
+
+PkgBR:
+    - kde5-rpm-macros
+    - extra-cmake-modules
+    - qt5-tools
+    - kf5-kdelibs4support-devel
+    - kf5-umbrella
+    - kf5-kfilemetadata-devel
+    - xapian-core-devel
+    - kf5-kidletime-devel
+    - kf5-kcmutils-devel
+    - kf5-krunner-devel
+    # TODO: n/a
+    #- kf5-kabc-devel
+    #- kf5-kmime-devel
+    #- kf5-kpimutils-devel
+    #- akonadi-qt5-devel
+    #- kf5-akonadi-devel
+    #- kf5-akonadi-kmime-devel
+PkgConfigBR:
+    - Qt5Core
+    - Qt5DBus
+    - Qt5Xml
+    - Qt5Network
+    - Qt5Gui
+    - Qt5Widgets
+    - Qt5Concurrent
+    - Qt5Test
+    - Qt5PrintSupport
+Requires:
+    - kde5-filesystem
+
+RequiresPost:
+    - /sbin/ldconfig
+RequiresPostUn:
+    - /sbin/ldconfig
+
+Files:
+    - "%{_kde5_libdir}/*.so.*"
+    - "%{_kde5_plugindir}/*"
+    - "%{_kde5_bindir}/*"
+    - "%{_kde5_sysconfdir}/xdg/autostart/baloo_file.desktop"
+    - "%{_kde5_sysconfdir}/dbus-1/system.d/org.kde.baloo.filewatch.conf"
+    - "%{_kde5_libexecdir}/kde_baloo_filewatch_raiselimit"
+    - "%{_kde5_datadir}/dbus-1/system-services/org.kde.baloo.filewatch.service"
+    - "%{_kde5_datadir}/kservicetypes5"
+    - "%{_kde5_datadir}/kservices5"
+    - "%{_kde5_datadir}/polkit-1/actions/org.kde.baloo.filewatch.policy"
+    - "%{_kde5_datadir}/akonadi/agents/akonadibalooindexingagent.desktop"
+    - "%{_kde5_datadir}/icons/hicolor/*/apps/baloo.png"
+
+SubPackages:
+    - Name: devel
+      Group: Development/Libraries
+      Summary: Development files for %{name}
+      Description: |
+        The %{name}-devel package contains the files necessary to develop applications
+        that use %{name}.
+      Files:
+          - "%{_kde5_libdir}/*.so"
+          - "%{_kde5_libdir}/cmake/Baloo"
+          - "%{_includedir}/baloo"
+          - "%{_kde5_datadir}/dbus-1/interfaces"
