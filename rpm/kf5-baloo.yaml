@@ -1,5 +1,5 @@
-Name         : kde5-baloo
-Version      : 4.97.0
+Name         : kf5-baloo
+Version      : 5.0.0
 Release      : 1
 Group        : System/Base
 License      : GPLv2+
@@ -22,7 +22,7 @@ Configure    : none
 Builder      : none
 
 PkgBR:
-    - kde5-rpm-macros
+    - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
     - kf5-kdelibs4support-devel
@@ -51,7 +51,7 @@ PkgConfigBR:
     - Qt5PrintSupport
     - Qt5Sql
 Requires:
-    - kde5-filesystem
+    - kf5-filesystem
 
 RequiresPost:
     - /sbin/ldconfig
@@ -59,18 +59,18 @@ RequiresPostUn:
     - /sbin/ldconfig
 
 Files:
-    - "%{_kde5_libdir}/*.so.*"
-    - "%{_kde5_plugindir}/*"
-    - "%{_kde5_bindir}/*"
-    - "%{_kde5_sysconfdir}/xdg/autostart/baloo_file.desktop"
-    - "%{_kde5_sysconfdir}/dbus-1/system.d/org.kde.baloo.filewatch.conf"
-    - "%{_kde5_libexecdir}/kde_baloo_filewatch_raiselimit"
-    - "%{_kde5_datadir}/dbus-1/system-services/org.kde.baloo.filewatch.service"
-    - "%{_kde5_datadir}/kservicetypes5"
-    - "%{_kde5_datadir}/kservices5"
-    - "%{_kde5_datadir}/polkit-1/actions/org.kde.baloo.filewatch.policy"
-    #- "%{_kde5_datadir}/akonadi/agents/akonadibalooindexingagent.desktop"
-    - "%{_kde5_datadir}/icons/hicolor/*/apps/baloo.png"
+    - "%{_kf5_libdir}/*.so.*"
+    - "%{_kf5_plugindir}/*"
+    - "%{_kf5_bindir}/*"
+    - "%{_kf5_sysconfdir}/xdg/autostart/baloo_file.desktop"
+    - "%{_kf5_sysconfdir}/dbus-1/system.d/org.kde.baloo.filewatch.conf"
+    - "%{_kf5_libexecdir}/kde_baloo_filewatch_raiselimit"
+    - "%{_kf5_datadir}/dbus-1/system-services/org.kde.baloo.filewatch.service"
+    - "%{_kf5_datadir}/kservicetypes5"
+    - "%{_kf5_datadir}/kservices5"
+    - "%{_kf5_datadir}/polkit-1/actions/org.kde.baloo.filewatch.policy"
+    #- "%{_kf5_datadir}/akonadi/agents/akonadibalooindexingagent.desktop"
+    - "%{_kf5_datadir}/icons/hicolor/*/apps/baloo.png"
 
 SubPackages:
     - Name: devel
@@ -80,7 +80,7 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Files:
-          - "%{_kde5_libdir}/*.so"
-          - "%{_kde5_libdir}/cmake/KF5Baloo"
+          - "%{_kf5_libdir}/*.so"
+          - "%{_kf5_libdir}/cmake/KF5Baloo"
           - "%{_includedir}/KF5/Baloo"
-          - "%{_kde5_datadir}/dbus-1/interfaces"
+          - "%{_kf5_datadir}/dbus-1/interfaces"
