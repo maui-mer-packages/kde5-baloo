@@ -64,7 +64,7 @@ Files:
     - "%{_kf5_bindir}/*"
     - "%{_kf5_sysconfdir}/xdg/autostart/baloo_file.desktop"
     - "%{_kf5_sysconfdir}/dbus-1/system.d/org.kde.baloo.filewatch.conf"
-    - "%{_kf5_libexecdir}/kde_baloo_filewatch_raiselimit"
+    - "%{_libexecdir}/kde_baloo_filewatch_raiselimit"
     - "%{_kf5_datadir}/dbus-1/system-services/org.kde.baloo.filewatch.service"
     - "%{_kf5_datadir}/kservicetypes5"
     - "%{_kf5_datadir}/kservices5"
