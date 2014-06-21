@@ -60,7 +60,7 @@ RequiresPostUn:
 
 Files:
     - "%{_kf5_libdir}/*.so.*"
-    - "%{_kf5_plugindir}/*"
+    - "%{_kf5_qtplugindir}/*"
     - "%{_kf5_bindir}/*"
     - "%{_kf5_sysconfdir}/xdg/autostart/baloo_file.desktop"
     - "%{_kf5_sysconfdir}/dbus-1/system.d/org.kde.baloo.filewatch.conf"

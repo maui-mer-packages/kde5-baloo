@@ -63,7 +63,7 @@ that use %{name}.
 
 %build
 # >> build pre
-%kde5_make
+%kf5_make
 # << build pre
 
 
@@ -74,7 +74,7 @@ that use %{name}.
 %install
 rm -rf %{buildroot}
 # >> install pre
-%kde5_make_install
+%kf5_make_install
 # << install pre
 
 # >> install post
@@ -83,7 +83,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %{_kf5_libdir}/*.so.*
-%{_kf5_plugindir}/*
+%{_kf5_qtplugindir}/*
 %{_kf5_bindir}/*
 %{_kf5_sysconfdir}/xdg/autostart/baloo_file.desktop
 %{_kf5_sysconfdir}/dbus-1/system.d/org.kde.baloo.filewatch.conf
