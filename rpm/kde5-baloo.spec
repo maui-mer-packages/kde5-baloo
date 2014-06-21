@@ -99,8 +99,8 @@ rm -rf %{buildroot}
 %files devel
 %defattr(-,root,root,-)
 %{_kde5_libdir}/*.so
-%{_kde5_libdir}/cmake/Baloo
-%{_includedir}/baloo
+%{_kde5_libdir}/cmake/KF5Baloo
+%{_includedir}/KF5/Baloo
 %{_kde5_datadir}/dbus-1/interfaces
 # >> files devel
 # << files devel
