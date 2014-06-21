@@ -35,7 +35,7 @@ BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
 BuildRequires:  kf5-kdelibs4support-devel
 BuildRequires:  kf5-umbrella
-BuildRequires:  kde5-kfilemetadata-devel
+BuildRequires:  kf5-kfilemetadata-devel
 BuildRequires:  libxapian-devel
 BuildRequires:  kf5-kidletime-devel
 BuildRequires:  kf5-kcmutils-devel

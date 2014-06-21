@@ -27,7 +27,7 @@ PkgBR:
     - qt5-tools
     - kf5-kdelibs4support-devel
     - kf5-umbrella
-    - kde5-kfilemetadata-devel
+    - kf5-kfilemetadata-devel
     - libxapian-devel
     - kf5-kidletime-devel
     - kf5-kcmutils-devel
