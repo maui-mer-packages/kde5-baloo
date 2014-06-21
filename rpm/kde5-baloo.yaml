@@ -69,7 +69,7 @@ Files:
     - "%{_kde5_datadir}/kservicetypes5"
     - "%{_kde5_datadir}/kservices5"
     - "%{_kde5_datadir}/polkit-1/actions/org.kde.baloo.filewatch.policy"
-    - "%{_kde5_datadir}/akonadi/agents/akonadibalooindexingagent.desktop"
+    #- "%{_kde5_datadir}/akonadi/agents/akonadibalooindexingagent.desktop"
     - "%{_kde5_datadir}/icons/hicolor/*/apps/baloo.png"
 
 SubPackages:
