@@ -100,7 +100,8 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %{_kf5_libdir}/*.so
 %{_kf5_libdir}/cmake/KF5Baloo
-%{_kf5_includedir}/Baloo
+%{_kf5_includedir}/baloo_version.h
+%{_kf5_includedir}/Baloo/*
 %{_kf5_datadir}/dbus-1/interfaces
 # >> files devel
 # << files devel
