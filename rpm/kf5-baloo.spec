@@ -9,7 +9,7 @@ Name:       kf5-baloo
 # << macros
 
 Summary:    Library for indexing and search
-Version:    5.0.0
+Version:    4.98.0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
