@@ -1,4 +1,4 @@
-Name         : kf5-baloo
+Name         : baloo
 Version      : 5.0.0
 Release      : 1
 Group        : System/Base
@@ -25,20 +25,19 @@ PkgBR:
     - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - kf5-kdelibs4support-devel
-    - kf5-umbrella
-    - kf5-kfilemetadata-devel
+    - kdelibs4support-devel
+    - kfilemetadata-devel
     - libxapian-devel
-    - kf5-kidletime-devel
-    - kf5-kcmutils-devel
-    - kf5-krunner-devel
+    - kidletime-devel
+    - kcmutils-devel
+    - krunner-devel
     # TODO: n/a
-    #- kf5-kabc-devel
-    #- kf5-kmime-devel
-    #- kf5-kpimutils-devel
+    #- kabc-devel
+    #- kmime-devel
+    #- kpimutils-devel
     #- akonadi-qt5-devel
-    #- kf5-akonadi-devel
-    #- kf5-akonadi-kmime-devel
+    #- akonadi-devel
+    #- akonadi-kmime-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -60,17 +59,17 @@ RequiresPostUn:
 
 Files:
     - "%{_kf5_libdir}/*.so.*"
-    - "%{_kf5_qtplugindir}/*"
+    - "%{_kf5_plugindir}/*"
     - "%{_kf5_bindir}/*"
-    - "%{_kf5_sysconfdir}/xdg/autostart/baloo_file.desktop"
+    - "%{_kf5_configdir}/autostart/baloo_file.desktop"
     - "%{_kf5_sysconfdir}/dbus-1/system.d/org.kde.baloo.filewatch.conf"
-    - "%{_libexecdir}/kauth/kde_baloo_filewatch_raiselimit"
-    - "%{_kf5_datadir}/dbus-1/system-services/org.kde.baloo.filewatch.service"
-    - "%{_kf5_datadir}/kservicetypes5"
-    - "%{_kf5_datadir}/kservices5"
-    - "%{_kf5_datadir}/polkit-1/actions/org.kde.baloo.filewatch.policy"
-    #- "%{_kf5_datadir}/akonadi/agents/akonadibalooindexingagent.desktop"
-    - "%{_kf5_datadir}/icons/hicolor/*/apps/baloo.png"
+    - "%{_kf5_libdir}/libexec/kauth/kde_baloo_filewatch_raiselimit"
+    - "%{_kf5_sharedir}/dbus-1/system-services/org.kde.baloo.filewatch.service"
+    - "%{_kf5_servicetypesdir}/*"
+    - "%{_kf5_servicesdir}/*"
+    - "%{_kf5_sharedir}/polkit-1/actions/org.kde.baloo.filewatch.policy"
+    #- "%{_kf5_sharedir}/akonadi/agents/akonadibalooindexingagent.desktop"
+    - "%{_kf5_sharedir}/icons/hicolor/*/apps/baloo.png"
 
 SubPackages:
     - Name: devel
@@ -84,4 +83,4 @@ SubPackages:
           - "%{_kf5_libdir}/cmake/KF5Baloo"
           - "%{_kf5_includedir}/baloo_version.h"
           - "%{_kf5_includedir}/Baloo/*"
-          - "%{_kf5_datadir}/dbus-1/interfaces"
+          - "%{_kf5_dbusinterfacesdir}/*"
