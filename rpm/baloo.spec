@@ -93,6 +93,7 @@ rm -rf %{buildroot}
 %{_kf5_servicesdir}/*
 %{_kf5_sharedir}/polkit-1/actions/org.kde.baloo.filewatch.policy
 %{_kf5_sharedir}/icons/hicolor/*/apps/baloo.png
+%{_kf5_qmldir}/*
 # >> files
 # << files
 

@@ -71,6 +71,7 @@ Files:
     - "%{_kf5_sharedir}/polkit-1/actions/org.kde.baloo.filewatch.policy"
     #- "%{_kf5_sharedir}/akonadi/agents/akonadibalooindexingagent.desktop"
     - "%{_kf5_sharedir}/icons/hicolor/*/apps/baloo.png"
+    - "%{_kf5_qmldir}/*"
 
 SubPackages:
     - Name: devel
