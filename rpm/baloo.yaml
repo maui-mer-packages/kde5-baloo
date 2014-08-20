@@ -80,6 +80,9 @@ SubPackages:
       Description: |
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
+      Requires:
+          - kfilemetadata-devel
+          - libxapian-devel
       Files:
           - "%{_kf5_libdir}/*.so"
           - "%{_kf5_cmakedir}/KF5Baloo"

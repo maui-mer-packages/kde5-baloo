@@ -50,6 +50,8 @@ Library for indexing and search
 Summary:    Development files for %{name}
 Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
+Requires:   kfilemetadata-devel
+Requires:   libxapian-devel
 
 %description devel
 The %{name}-devel package contains the files necessary to develop applications
