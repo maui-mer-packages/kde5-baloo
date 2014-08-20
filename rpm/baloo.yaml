@@ -67,7 +67,6 @@ Files:
     - "%{_kf5_sysconfdir}/dbus-1/system.d/org.kde.baloo.filewatch.conf"
     - "%{_kf5_libdir}/libexec/kauth/kde_baloo_filewatch_raiselimit"
     - "%{_kf5_sharedir}/dbus-1/system-services/org.kde.baloo.filewatch.service"
-    - "%{_kf5_servicetypesdir}/*"
     - "%{_kf5_servicesdir}/*"
     - "%{_kf5_sharedir}/polkit-1/actions/org.kde.baloo.filewatch.policy"
     #- "%{_kf5_sharedir}/akonadi/agents/akonadibalooindexingagent.desktop"
