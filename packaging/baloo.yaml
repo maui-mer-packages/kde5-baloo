@@ -7,7 +7,6 @@ Summary      : Library for indexing and search
 Description  : |
   Library for indexing and search
 URL          : http://www.kde.org
-SetupOptions : -q -n %{name}-%{version}/upstream
 
 Sources:
     - "%{name}-%{version}.tar.xz"
